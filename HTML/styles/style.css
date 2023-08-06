@@ -415,6 +415,12 @@ body{
     box-shadow: -1px 3px 37px 9px rgba(0,0,0,0.75);
     color: var(--white);
 }
+.show-one-product{
+    border: 1px solid var(--supplement);
+    margin-top: 80px;
+    border-radius: 10px;
+    background-color: var(--dark);
+}
 .show-post img{
      padding: 20px;
      width: 100%;
