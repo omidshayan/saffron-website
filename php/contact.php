@@ -2,7 +2,7 @@
 
     <!---------------- start content ---------------->
     <div class="page-body body-costum">
-        <h2>تماس با ما</h2>
+        <h2 class="contact-title">تماس با ما</h2>
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-12 col-sm-6">
@@ -21,14 +21,14 @@
                     </div>
                 </div>
                 <div class="col-12 col-sm-6">
-                    <p>آدرس: هرات، جاده عیدگاه، شرکت افغان ارین گیت</p>
-                    <p>info@gitfmail.com</p>
-                    <p>شماره های تماس: 0799999999 - 0799999999</p>
+                    <img src="img/logo.png" alt="">
+                    <p>آدرس : هرات، فرقه ابتدای سرک نوآباد نبش کوچه مسجد جامع شرکت آریانا زعفران</p>
+                    <p>arianasaffron@gmail.com</p>
+                    <p>شماره های تماس: 0783326040 - 0796313017</p>
                 </div>
             </div>
         </div>
-    </div>
-    <!---------------- end content ---------------->
+    </div>----------- end content ---------------->
 
     <!-- footer -->
     <?php include_once 'footer.php' ?>
