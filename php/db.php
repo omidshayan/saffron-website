@@ -3,6 +3,8 @@ date_default_timezone_set("asia/kabul");
         $username = 'root';
         $pass = '';
         $dbname = "saffron";
+
+        
         try{
         $connect = new PDO("mysql:host=localhost;dbname=$dbname",$username,$pass);
         $connect->exec("set names utf8");
