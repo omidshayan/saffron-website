@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title> سیستم مدیریت پارکینگ</title>
+    <title> سیستم مدیریت وبسایت زعفران</title>
 </head>
 
 <body>
@@ -27,7 +27,7 @@
                 <input type="text" name="username" placeholder="نام کاربری خود را وارد کنید..." required><br>
                 <span>رمزعبور</span><br>
                 <input type="password" name="password" placeholder="رمز عبور خود را وارد کنید..." required>
-                <input type="submit" value=" ورود " name="" class="my-btn btn-custom">
+                <input type="submit" value=" ورود " class="my-btn btn-custom">
             </form>
         </div>
     </div>
