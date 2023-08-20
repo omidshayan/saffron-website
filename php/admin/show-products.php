@@ -24,20 +24,22 @@
         <tbody>
             <?php
             include_once '../db.php';
-            $sql = "SELECT * from products ORDER BY `id` DESC";
+            $sql = "SELECT * from products order by id DESC";
             $result = $connect->query($sql);
             $rows = $result->fetchAll(PDO::FETCH_ASSOC);
             $number = 1;
             foreach ($rows as $row) { 
-                
-                echo '<tr>
+
+                echo '
+                <tr>
                 <td>'.$number.'</td>
                 <td>'.$row["name"].'</td>
                 <td>'.substr($row["description"], 0, 20).'...</td>
                 <td><img src="'.$row["img"].'" class="img-post" alt="post-img"></td>
                 <td><a href="update-product.php?id='.$row['id'].'"><i class="fas fa-edit" style="color: green;"></i></a></td>
                 <td><a href="back/delete-product-check.php?id='.$row['id'].'"><i class="fas fa-trash-alt" style="color: red;"></i></a></td>
-            </tr>';
+                </tr>
+            ';
              $number ++;
             }
             ?>

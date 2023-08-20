@@ -24,7 +24,7 @@
             </div>
             <div class="sidebar-avatar">
                 <div class="profile-image">
-                    <img src="img/profile.png" alt="سیستم مدیریت خیاطی">
+                    <img src="img/profile.png" alt="سیستم مدیریت ">
                 </div>
                 <div class="avatar-info">
                     <div class="avatar-text">

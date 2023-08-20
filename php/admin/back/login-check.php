@@ -4,6 +4,8 @@ include_once "../../db.php";
 
 $username = $_POST['username']; //ali
 $pass = $_POST["password"]; //1234
+
+
 $sql = "SELECT * FROM `admin` WHERE `username` = ? AND `password` = ?";
 $result = $connect->prepare($sql);
 $result->bindValue(1,$username);
