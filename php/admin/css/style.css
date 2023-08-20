@@ -17,7 +17,6 @@
 }
 
 /* new Chnage */
-
 * {
     margin: 0;
     padding: 0;
@@ -153,17 +152,14 @@ body{
     box-shadow: var(--main-color);
     color: var(--white-color);
 }
-
 .brand h3{
     color: var(--content-color);
     margin-bottom: 10px;
 }
-
 .brand h3 svg{
     color: var(--color-main);
 }
-
-.sidebar-container .sidebar-avatar{
+.idebar-container .sidebar-avatar{
     display: flex;
     align-items: center;
     justify-content: space-between;
