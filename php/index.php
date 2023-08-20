@@ -112,12 +112,12 @@
         </div>
     </div>
 
-    <!-- galary -->
+    <!-- recipes start -->
     <section class="galary">
         <div class="container">
             <div class="top-text">
-                <span class="home-title">گالری تصاویر</span>
-                <span class="show-all"><a href="views/conferences.php">نمایش همه تصاویر</a> </span>
+                <span class="home-title">دستور پخت </span>
+                <span class="show-all"><a href="recipes.php">نمایش همه </a> </span>
             </div>
             <hr class="hr-style">
             <div class="row">

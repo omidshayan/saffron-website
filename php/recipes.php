@@ -1,33 +1,86 @@
 <?php include_once 'header.php' ?>
-    <!---------------- start content ---------------->
-    <div class="page-body">
-        <div class="container">
-            <h2 class="home-title">دستور پخت</h2>
-            <div class="row align-items-center">
-                <div class="col-12 col-sm-6 show-post">
-                    <div class="text-post">
-                        <p>
-                            آریانا زعفران در سال 2011 توسط بشیر احمد رشیدی تاسیس شد. این یک تجارت خانوادگی و یکی از بزرگترین
-                            تولید کنندگان و پروسس های زعفران در افغانستان است. این شرکت زعفران 100% خالص را از مزارع خود و
-                            کشاورزان قراردادی جمع آوری می کند. پس از پروسس، کیفیت زعفران در لابراتوار وزارت زراعت، آبیاری و
-                            مالداری افغانستان آزمایش می شود.
-                            کشاورزی پایداریک اولویت کلیدی است و آریانا زعفران نوآوری در فناوری و تجهیزات را ابزاری برای
-                            دستیابی به آن می داند. این شرکت از اصول تجارت منصفانه و یک مدل کسب و کار اخلاقی برای ایجاد شغل و
-                            رفاه پایدار برای کشاورزان و جوامع روستایی استفاده می کند. آریانازعفران متعهد به ایفای نقش فعال
-                            در ساختن یک افغانستان مرفه از طریق توسعه کشاورزی به رهبری سکتور خصوصی است.
-                            آریانا زعفران متعهد به تولید زعفران با کیفیت است. این شرکت در حال حاضر دارای گواهینامه های
-                            مختلفی از جمله ISO 22000، HACCP، ISO 9001 و ISO 3632 (ویژه کیفیت زعفران) می باشد که اعتماد را
-                            تضمین می کند.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 show-post">
-                    <img src="img/products/5.jpg" alt="">
-                </div>
+<!---------------- start content ---------------->
+<div class="container">
+    <div class="top-text">
+        <span class="home-title">همه دستورات</span>
+    </div>
+    <hr class="hr-style">
+    <div class="row">
+        <div class="col-12 col-sm-6 col-md-3">
+            <div class="product-item">
+                <a href="product.php">
+                    <img src="img/products/1.jpg" alt="">
+                    <h4>نام غذا</h4>
+                    <p>توضیحات تکمیلی پخت</p>
+                </a>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3">
+            <div class="product-item">
+                <a href="product.php">
+                    <img src="img/products/2.jpg" alt="">
+                    <h4>نام محصول</h4>
+                    <p>توضیحات کوتاه محصول</p>
+                </a>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3">
+            <div class="product-item">
+                <a href="product.php">
+                    <img src="img/products/3.jpg" alt="">
+                    <h4>نام محصول</h4>
+                    <p>توضیحات کوتاه محصول</p>
+                </a>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3">
+            <div class="product-item">
+                <a href="product.php">
+                    <img src="img/products/4.jpg" alt="">
+                    <h4>نام محصول</h4>
+                    <p>توضیحات کوتاه محصول</p>
+                </a>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3">
+            <div class="product-item">
+                <a href="product.php">
+                    <img src="img/products/1.jpg" alt="">
+                    <h4>نام محصول</h4>
+                    <p>توضیحات کوتاه محصول</p>
+                </a>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3">
+            <div class="product-item">
+                <a href="product.php">
+                    <img src="img/products/2.jpg" alt="">
+                    <h4>نام محصول</h4>
+                    <p>توضیحات کوتاه محصول</p>
+                </a>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3">
+            <div class="product-item">
+                <a href="product.php">
+                    <img src="img/products/3.jpg" alt="">
+                    <h4>نام محصول</h4>
+                    <p>توضیحات کوتاه محصول</p>
+                </a>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3">
+            <div class="product-item">
+                <a href="product.php">
+                    <img src="img/products/4.jpg" alt="">
+                    <h4>نام محصول</h4>
+                    <p>توضیحات کوتاه محصول</p>
+                </a>
             </div>
         </div>
     </div>
-    <!---------------- end content ---------------->
+</div>
+<!---------------- end content ---------------->
 
-    <!-- footer -->
-    <?php include_once 'footer.php' ?>
+<!-- footer -->
+<?php include_once 'footer.php' ?>
