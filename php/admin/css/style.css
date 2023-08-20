@@ -924,3 +924,10 @@ text-align: right;
   .img-post{
     width: 60px;
   }
+  .img-edit{
+    margin: 0 auto;
+    display: block;
+    width: 130px;
+    height: 130px;
+    border-radius: 10px;
+  }

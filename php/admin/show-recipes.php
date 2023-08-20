@@ -7,11 +7,8 @@
 <div class="table-wrapper">
     <table class="fl-table">
         <?php
-        if (isset($_GET['ok'])) {
+        if (isset($_GET['success'])) {
             echo '<div class="my-event"><span>عملیات با موفقیت انجام شد :)</span></div>';
-        }
-        if (isset($_GET['error'])) {
-            echo ' <span class="mytxt">مشکلی پیش آمده است :(</span>';
         }
         ?>
         <thead>
@@ -40,7 +37,7 @@
                 <td>'.$row["description"].'</td>
                 <td><img src="'.$row["img"].'" class="img-post" alt="post-img"></td>
                 <td><a href="update-recipes.php?id='.$row['id'].'"><i class="fas fa-edit" style="color: green;"></i></a></td>
-                <td><a href="delete-recipes-check.php?id='.$row['id'].'"><i class="fas fa-trash-alt" style="color: red;"></i></a></td>
+                <td><a href="back/delete-recipes-check.php?id='.$row['id'].'"><i class="fas fa-trash-alt" style="color: red;"></i></a></td>
             </tr>';
              $number ++;
             }
