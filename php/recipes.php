@@ -6,78 +6,22 @@
     </div>
     <hr class="hr-style">
     <div class="row">
-        <div class="col-12 col-sm-6 col-md-3">
-            <div class="product-item">
-                <a href="product.php">
-                    <img src="img/products/1.jpg" alt="">
-                    <h4>نام غذا</h4>
-                    <p>توضیحات تکمیلی پخت</p>
-                </a>
+        <?php
+        include_once "db.php";
+        $sql1 = "SELECT * FROM `recipes` ORDER BY `id` DESC LIMIT 4";
+        $result1 = $connect->query($sql1);
+        $rows1 = $result1->fetchAll(PDO::FETCH_ASSOC);
+        foreach ($rows1 as $row1) { ?>
+            <div class="col-12 col-sm-6 col-md-3">
+                <div class="product-item">
+                    <a href="product.php?id=<?= $row1['id'] ?>">
+                        <img src="img-posts/<?= $row1['img'] ?>" alt="">
+                        <h4><?= $row1['name'] ?></h4>
+                        <p><?= substr($row1['description'], 0, 20) ?>...</p>
+                    </a>
+                </div>
             </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-3">
-            <div class="product-item">
-                <a href="product.php">
-                    <img src="img/products/2.jpg" alt="">
-                    <h4>نام محصول</h4>
-                    <p>توضیحات کوتاه محصول</p>
-                </a>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-3">
-            <div class="product-item">
-                <a href="product.php">
-                    <img src="img/products/3.jpg" alt="">
-                    <h4>نام محصول</h4>
-                    <p>توضیحات کوتاه محصول</p>
-                </a>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-3">
-            <div class="product-item">
-                <a href="product.php">
-                    <img src="img/products/4.jpg" alt="">
-                    <h4>نام محصول</h4>
-                    <p>توضیحات کوتاه محصول</p>
-                </a>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-3">
-            <div class="product-item">
-                <a href="product.php">
-                    <img src="img/products/1.jpg" alt="">
-                    <h4>نام محصول</h4>
-                    <p>توضیحات کوتاه محصول</p>
-                </a>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-3">
-            <div class="product-item">
-                <a href="product.php">
-                    <img src="img/products/2.jpg" alt="">
-                    <h4>نام محصول</h4>
-                    <p>توضیحات کوتاه محصول</p>
-                </a>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-3">
-            <div class="product-item">
-                <a href="product.php">
-                    <img src="img/products/3.jpg" alt="">
-                    <h4>نام محصول</h4>
-                    <p>توضیحات کوتاه محصول</p>
-                </a>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-3">
-            <div class="product-item">
-                <a href="product.php">
-                    <img src="img/products/4.jpg" alt="">
-                    <h4>نام محصول</h4>
-                    <p>توضیحات کوتاه محصول</p>
-                </a>
-            </div>
-        </div>
+        <?php } ?>
     </div>
 </div>
 <!---------------- end content ---------------->

@@ -63,10 +63,10 @@
                         </a>
                     </li>
                     <ul class="menu-panel">
-                        <a href="show-orders.php">
+                        <a href="insert-product.php">
                             <li>ثبت</li>
                         </a>
-                        <a href="sewing.php">
+                        <a href="show-products.php">
                             <li>نمایش</li>
                         </a>
                     </ul>

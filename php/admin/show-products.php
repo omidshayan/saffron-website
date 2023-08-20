@@ -1,6 +1,6 @@
 <?php include_once 'sidebar.php'; ?>
 <div class="overview">
-    <div class="all-review"> لیست دستورات</div>
+    <div class="all-review"> لیست محصولات</div>
 </div>
 <br>
 
@@ -14,7 +14,7 @@
         <thead>
             <tr>
                 <th>#</th>
-                <th> عنوان دستور </th>
+                <th> نام محصول </th>
                 <th>توضیحات</th>
                 <th> عکس</th>
                 <th> ویرایش</th>
@@ -24,18 +24,19 @@
         <tbody>
             <?php
             include_once '../db.php';
-            $sql = "select * from recipes ORDER BY `id` DESC";
+            $sql = "SELECT * from products ORDER BY `id` DESC";
             $result = $connect->query($sql);
             $rows = $result->fetchAll(PDO::FETCH_ASSOC);
             $number = 1;
             foreach ($rows as $row) { 
+                
                 echo '<tr>
                 <td>'.$number.'</td>
                 <td>'.$row["name"].'</td>
                 <td>'.substr($row["description"], 0, 20).'...</td>
                 <td><img src="'.$row["img"].'" class="img-post" alt="post-img"></td>
-                <td><a href="update-recipes.php?id='.$row['id'].'"><i class="fas fa-edit" style="color: green;"></i></a></td>
-                <td><a href="back/delete-recipes-check.php?id='.$row['id'].'"><i class="fas fa-trash-alt" style="color: red;"></i></a></td>
+                <td><a href="update-product.php?id='.$row['id'].'"><i class="fas fa-edit" style="color: green;"></i></a></td>
+                <td><a href="back/delete-product-check.php?id='.$row['id'].'"><i class="fas fa-trash-alt" style="color: red;"></i></a></td>
             </tr>';
              $number ++;
             }
