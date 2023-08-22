@@ -24,7 +24,7 @@
         <tbody>
             <?php
             include_once '../db.php';
-            $sql = "select * from recipes ORDER BY `id` DESC";
+            $sql = "SELECT * from recipes ORDER BY `id` DESC";
             $result = $connect->query($sql);
             $rows = $result->fetchAll(PDO::FETCH_ASSOC);
             $number = 1;
