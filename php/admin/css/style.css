@@ -401,7 +401,7 @@ main{
 .fl-table tr:hover{
     background-color: rgba(106, 95, 232, 0.171);
 }
-.insert-cars {
+.insert-item {
     width: 100%;
     height: 100%;
     background-color: var(--sidebar-color);
@@ -417,12 +417,12 @@ main{
 
 /* insert  page */
 
-.insert-cars div{
+.insert-item div{
     text-align: right;
     margin-right: 5.5%;
     margin-bottom: 4px;
 }
-.insert-cars input{
+.insert-item input{
     background-color: var(--main-color);
     border: none;
     width: 90%;
@@ -440,7 +440,7 @@ main{
     border: 1px solid var(--content-color);
     margin-bottom: 25px;    
 }
-.insert-cars textarea{
+.insert-item textarea{
     background-color: var(--main-color);
     border: none;
     width: 90%;
@@ -459,7 +459,7 @@ main{
     margin-bottom: 25px;    
 }
 
-.insert-cars input:focus {
+.insert-item input:focus {
     outline: none !important;
     border:1px solid var(--content-color);
     box-shadow: 0 0 8px var(--content-color);
@@ -564,7 +564,7 @@ main{
     margin: 0;
     text-align: center;
 }
-.insert-cars{
+.insert-item{
     width: 100%;
     height: 100%;
     background-color: var(--sidebar-color);

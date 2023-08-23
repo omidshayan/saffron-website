@@ -20,7 +20,7 @@ if (isset($_GET['error'])) {
     echo '<span>مشکلی پیش امده است</span>';
 }
 ?>
-<div class="insert-cars">
+<div class="insert-item">
     <form action="back/update-check-product.php" method="post" enctype="multipart/form-data">
         <h3 class="my-title">ثبت مشخصات دستور پخت</h3>
         <div>عنوان دستور <span style="color: red;">*</span></div>
