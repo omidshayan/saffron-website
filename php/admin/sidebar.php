@@ -43,6 +43,12 @@
             <hr class="hr">
             <div class="sidebar-menu">
                 <ul>
+                    <li>
+                        <a href="home.php">
+                            <span class="fas fa-home"></span>
+                            <span>صفحه اصلی</span>
+                        </a>
+                    </li>
                     <li class="menu-accordion"><a class="menuItemLink">
                             <span class="fas fa-code-branch"></span>
                             <span>دستور پخت</span>

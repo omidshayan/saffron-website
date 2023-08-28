@@ -50,7 +50,7 @@
             </div>
         </div>
 
-        <div class="copyright">copyright: 2022 - <a href="aboutMe.html">کاظم علیزاده</a></div>
+        <div class="copyright">copyright: 2022 - <a href="aboutMe.php">کاظم علیزاده</a></div>
     </footer>
 
     <!-- scripts -->

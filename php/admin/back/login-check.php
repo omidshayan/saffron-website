@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 include_once "../../db.php"; 
 
 $username = $_POST['username']; //ali
@@ -13,7 +13,8 @@ $result->bindValue(2,$pass);
 $result->execute();
 $row = $result->rowCount();
     if($row == 1){
-        header('location:../admin-panel.php');
+        $_SESSION['admin'] = 'admin';
+        header('location:../home.php');
         exit();
     }
 

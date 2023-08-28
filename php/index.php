@@ -45,8 +45,6 @@
         <hr class="hr-style">
         <div class="row">
             <?php
-
-
             include_once "db.php";
             $sql1 = "SELECT * FROM `products` ORDER BY `id` DESC LIMIT 4";
             $result1 = $connect->query($sql1);
@@ -111,7 +109,7 @@
             foreach ($rows1 as $row1) { ?>
                 <div class="col-12 col-sm-6 col-md-3">
                     <div class="product-item">
-                        <a href="views/product.php?id=<?= $row1['id'] ?>">
+                        <a href="rec.php?id=<?= $row1['id'] ?>">
                             <img src="img-posts/<?= $row1['img'] ?>" alt="">
                             <h4><?= $row1['name'] ?></h4>
                             <p><?= substr($row1['description'], 0, 20) ?>...</p>

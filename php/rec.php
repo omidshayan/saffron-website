@@ -2,14 +2,12 @@
 include_once "header.php";
 
 include_once 'db.php';
-$sql = "SELECT * FROM `products` WHERE `id` = ?";
+$sql = "SELECT * FROM `recipes` WHERE `id` = ?";
 $result = $connect->prepare($sql);
 $result->bindValue(1, $_GET['id']);
 $result->execute();
 $data = $result->fetch(PDO::FETCH_OBJ);
 ?>
-
-
 <!---------------- start content ---------------->
 <div class="container show-one-product">
     <div class="row align-items-center">
