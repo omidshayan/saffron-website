@@ -1,6 +1,7 @@
-<?php include_once 'sidebar.php'; 
+<?php include_once 'sidebar.php';
 session_start();
-if(!isset($_SESSION['admin'])){
+include_once '../db.php';
+if (!isset($_SESSION['admin'])) {
     header('location: index.php');
     exit();
 }
@@ -11,8 +12,29 @@ if(!isset($_SESSION['admin'])){
 <br>
 
 <div class="table-wrapper">
-    محتویات صفحه اصلی
+    <div class="card">
+        <h2>تعداد محصولات</h2>
+        <?php
+        $sql_product = "SELECT * FROM products";
+        $result_p = $connect->query($sql_product);
+        $row_product = $result_p->rowCount();
+        ?>
+        <p><?= $row_product ?></p>
+    </div>
+
+    <div class="card">
+        <?php
+        $sql_resipes = "SELECT * FROM recipes";
+        $result_r = $connect->query($sql_resipes);
+        $row_resipes = $result_r->rowCount();
+        ?>
+        <h2>تعداد دستورات پخت</h2>
+        <p><?= $row_resipes ?></p>
+    </div>
+
 </div>
+
+
 </main>
 </div>
 <!-- js library -->

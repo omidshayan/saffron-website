@@ -24,7 +24,7 @@ if (isset($_GET['error'])) {
         <div>نام محصول <span style="color: red;">*</span></div>
         <input type="text" placeholder=" نام محصول را وارد نمایید ..." name="name" autocomplete="off" required>
         <div>توضیحات </div>
-        <textarea name="description" cols="30" rows="10"></textarea>
+        <textarea name="description" id="content" class="ckeditor" cols="30" rows="10"></textarea>
         <div>انتخاب عکس </div>
         <input type="file" name="img">
         <input type="submit" value="ثبت " class="my-btn" name="btn">

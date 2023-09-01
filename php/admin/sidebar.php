@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="js/jquery.js"></script>
     <title>بخش مدیریت</title>
+    <script src="lib/ckeditor//ckeditor.js"></script>
 </head>
 
 <body>
