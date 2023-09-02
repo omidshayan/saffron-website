@@ -2,7 +2,6 @@ const hamburger = document.querySelector('.ham-menu')
 const responsiveMenu = document.querySelector('.nav-res')
 const overlay = document.querySelector('.overlay')
 const close = document.querySelector('.close-menu')
-const submenu = document.querySelectorAll('.submenu')
 
 // show menu
 hamburger.addEventListener('click' , function(){
@@ -21,16 +20,6 @@ function closeItems(){
     responsiveMenu.classList.remove('active')
     overlay.classList.remove('active')
 }
-
-//submenu
-submenu.forEach(item => {
-    item.addEventListener('click' , function(){
-        item.classList.toggle('show-icon')
-        const mega = item.nextElementSibling
-        mega.classList.toggle('activemenu')
-    })
-})
-
 
 
 // slider
