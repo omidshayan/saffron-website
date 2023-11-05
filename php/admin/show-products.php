@@ -17,6 +17,25 @@ if(!isset($_SESSION['admin'])){
             echo '<div class="my-event"><span>عملیات با موفقیت انجام شد :)</span></div>';
         }
         ?>
+
+<script>
+    $(document).ready(function () {
+        $(".delete").click(function () {
+            var msg=confirm("جهت حذف مطمئن هستید؟");
+            if(msg==true)
+            {
+
+            }
+            else
+            {
+                return false;
+            }
+        });
+    });
+
+</script>
+
+
         <thead>
             <tr>
                 <th>#</th>
@@ -43,7 +62,7 @@ if(!isset($_SESSION['admin'])){
                 <td>'.substr($row["description"], 0, 20).'...</td>
                 <td><img src="'.$row["img"].'" class="img-post" alt="post-img"></td>
                 <td><a href="update-product.php?id='.$row['id'].'"><i class="fas fa-edit" style="color: green;"></i></a></td>
-                <td><a href="back/delete-product-check.php?id='.$row['id'].'"><i class="fas fa-trash-alt" style="color: red;"></i></a></td>
+                <td><a href="back/delete-product-check.php?id='.$row['id'].'" class="delete"><i class="fas fa-trash-alt" style="color: red;"></i></a></td>
                 </tr>
             ';
              $number ++;
